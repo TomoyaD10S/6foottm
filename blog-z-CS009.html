@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>6footTM.com/Blog/Computer Science</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <script src='https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian'></script>
+
+  <!-- =======================================================
+    Theme Name: DevFolio
+    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="index.html">6footTM</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="blog-top-Travel.html">Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="blog-top-CS.html">Computer Science</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="blog-top-DL.html">Daily Life</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div class="intro intro-single route bg-image" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="intro-title mb-4">Blog Details</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="blog-top-CS.html">Library</a>
+            </li>
+            <!--
+            <li class="breadcrumb-item active">Data</li>
+            -->
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-thumb">
+              <img src=" " class="img-fluid" alt="">
+            </div>
+            <div class="post-meta">
+              <h1 class="article-title">Diameter of Binary Tree<br>(leetcode No. 543)</h1>
+              <ul>
+                <li>
+                  <span class="ion-ios-person"></span>
+                  <a href="index.html">Tomoya Machida</a>
+                </li>
+                <li>
+                  <span class="ion-pricetag"></span>
+                  <a href="javascript:void(0);">Coding</a>
+                </li>
+              </ul>
+            </div>
+            <div class="article-content">
+              <p>
+                This question is 
+                <u><a href="https://leetcode.com/problems/diameter-of-binary-tree/description/" target="_blank" rel="noopener noreferrer">543. Diameter of Binary Tree</a></u>
+                .
+                Here is the aproaches to slove this question.
+
+              </p>
+              <p><br>
+                1. Add up the length of the longest path which root.left has and 
+                the length of the longest path which root.right has. if the number 
+                is more than 'ans', update 'ans'. (Note that 'ans' is nonlocal.)<br><br>
+                2. In this recursion, return the maximum number between the length 
+                of the longest path which root.left has and the length of the longest 
+                path which root.right has.when you move to root.left, replace hi with root.val.<br><br>
+                The figure blow are the steps to slove the question.<br><br>
+                1-1 The length of the longest path which root.left has is 2.
+                the length of the longest path which root.right has is 1. So, the total is 3.
+                Since the number is more than 'ans'(1 at this moment), update the 'ans'.
+                <br><br>
+                <img src="img/Blog/CS/009/001.png" class="img-fluid" alt="">
+                <br><br>
+                1-2 Since the length of the longest path which root.left has is longer than 
+                the length of the longest path which root.right has, return the length of the 
+                longest path which root.left has.
+                <br><br>
+                <img src="img/Blog/CS/009/002.png" class="img-fluid" alt="">
+                <br><br>
+                1-1 The length of the longest path which root.left has is 3.
+                the length of the longest path which root.right has is 2. So, the total is 5.
+                Since the number is more than 'ans'(3 at this moment), update the 'ans'.
+                <br><br>
+                <img src="img/Blog/CS/009/003.png" class="img-fluid" alt="">
+                <br><br>
+                1-2 Since the length of the longest path which root.left has is longer than 
+                the length of the longest path which root.right has, return the length of the 
+                longest path which root.left has.
+                <br><br>
+                <img src="img/Blog/CS/009/004.png" class="img-fluid" alt="">
+                <br><br>Python
+              <code><pre class="prettyprint linenums lang=python">
+class Solution(object):
+    def diameterOfBinaryTree(self, root):
+        dic={0:0}
+        def recursion(root):
+            if not root:
+                return 0
+            left = recursion(root.left)
+            right = recursion(root.right)
+            dic[0]=max(dic[0],left+right)
+            return 1+max(left,right)
+        recursion(root)
+        return dic[0]</pre></code><br>
+                Python3
+              <code><pre class="prettyprint linenums lang=python">
+class Solution:
+    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        ans=0
+        def dia(root):
+            nonlocal ans
+            if not root:
+                return 0
+            left=dia(root.left)
+            right=dia(root.right)
+            ans=max(ans,left+right)
+            return 1+max(right,left)
+        dia(root)
+        return ans</pre></code>
+              </p>
+              <p>
+                Time complexity: O(n)<br>
+                Space complexity: O(1)<br><br>
+                reference: 
+                <u><a href="https://leetcode.com/problems/diameter-of-binary-tree/solutions/3726054/smart-approach/" target="_blank" rel="noopener noreferrer">Smart Approach</a></u>
+              </p>
+              <!--
+              <blockquote class="blockquote">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              </blockquote>
+              -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="widget-sidebar sidebar-search">
+            <h5 class="sidebar-title">Search</h5>
+            <div class="sidebar-content">
+              <script async src="https://cse.google.com/cse.js?cx=f7fb9f30488924be3">
+              </script>
+              <div class="gcse-search"></div>
+            </div>
+          </div>
+          <div class="widget-sidebar widget-tags">
+            <h5 class="sidebar-title">Tags</h5>
+            <div class="sidebar-content">
+              <ul>
+                <li>
+                  <a href="javascript:void(0);">Coding</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">LeetCode</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
