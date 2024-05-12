@@ -786,9 +786,7 @@ a:hover {
 
 .work-img img {
   transition: all 1s;
-  position: absolute; /* 絶対位置を指定して親要素に合わせて配置 */
-  width: 100%; /* 画像を親要素に合わせて幅100%に設定 */
-  height: auto; /* 高さを自動調整 */
+  
 }
 
 .work-content {
