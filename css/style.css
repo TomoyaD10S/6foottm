@@ -782,9 +782,6 @@ a:hover {
 .work-img {
   display: block;
   overflow: hidden;
-  width: 100%; /* 親要素に合わせて幅を100%に設定 */
-  padding-top: 56.25%; /* 画像の高さを親要素の幅の56.25%に設定（16:9のアスペクト比） */
-  position: relative; /* ポジション指定のために相対位置を指定 */
 }
 
 .work-img img {
