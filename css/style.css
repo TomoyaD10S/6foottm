@@ -812,6 +812,7 @@ a:hover {
 
 .work-content {
   padding: 2rem 3% 1rem 4%;
+  height: 300px;
 }
 
 .work-content .w-more {
