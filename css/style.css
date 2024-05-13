@@ -827,6 +827,7 @@ a:hover {
   font-size: 2.5rem;
   color: #0078ff;
   float: right;
+  height: 48px;
 }
 
 .work-content .w-like a {
